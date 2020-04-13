@@ -1,0 +1,133 @@
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: block;
+  background-color: var(--dark-color);
+  border: 0;
+  border-bottom: solid 1px var(--light-color);
+  width: 100%;
+  font-size: 1.25rem;
+  color: var(--light-color);
+  padding: .25rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: 0;
+  border-bottom: solid 2px var(--primary-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+input + label {
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  padding: .25rem;
+  font-size: 1.25rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  outline: none;
+  border: 0;
+  border-left: solid 1px var(--light-color);
+  border-top: solid 1px var(--light-color);
+}
+
+textarea:focus {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  border-left: solid 5px var(--primary-color);
+  border-top: solid 1px var(--primary-color);
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  font-size: 1.25rem;
+  padding: .5rem 2rem;
+  border: solid 1px #a62a01;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Personalización del checkbox */
+.checkbox {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.checkbox input[type="checkbox"] {
+  /* Ocultamos el checkbox original */
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox label::before {
+  /* Creamos el recuadro exterior del checkbox */
+  content: "";
+  display: inline-block;
+  height: var(--font-size);
+  width: var(--font-size);
+  border: 1px solid gray;
+  
+  /* Situamos el recuadro, es necesario
+     que el label tenga posicionamiento */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.checkbox label::after {
+  /* Creamos la marca */
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 9px;
+  border-left: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  transform: rotate(-45deg);
+  
+  /* Situamos encima del recuadro */
+  position: absolute;
+  left: 4px;
+  top: 3px;
+}
+
+.checkbox label {
+  /* Para posicionar correctamente
+     de forma absoluta el recuadro 
+     y la marca */
+  position: relative;
+  
+  /* Dejamos espacio para la casilla
+     16px de la casilla y 6px de margen
+     entre el checkbox y la etiqueta */
+  padding-left: 22px;
+}
+
+/* Esto añade interactividad */
+
+/* Por defecto mantenemos la marca oculta (desmarcado) */
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/* Cuando el checkbox original esté marcado
+   activamos nuestra propia marca */
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/* Por último, agregamos el efecto "focus" */
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}

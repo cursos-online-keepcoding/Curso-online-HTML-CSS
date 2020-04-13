@@ -1,0 +1,11 @@
+:root {
+  --font-size: 16px;
+  --primary-color: #d65a31;
+  --dark-color: #000033;
+  --light-color: #eeeeee;
+
+  --md-break: 480px;
+  --lg-break: 1024px;
+
+  --content-max-width: 800px;
+}

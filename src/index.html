@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The FrontEnder Fun Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Gugi&family=Monda:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/descargas.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/dark-coders.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">The Front<span>ender</span></div>
+
+      <input type="checkbox" id="burger-checkbox" />
+      <label for="burger-checkbox" class="burger-label"></label>
+
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="#el-juego">El juego</a></li>
+        <li class="navbar-item"><a href="#descargas">Descargas</a></li>
+        <li class="navbar-item"><a href="#comunidad">Comunidad</a></li>
+        <li class="navbar-item"><a href="#galeria">Galería</a></li>
+        <li class="navbar-item"><a href="#dirty-coders">Dirty Coders</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="header-overlay"></div>
+      <div class="header-content container">
+        <h1 class="logo">The Front<span>ender</span></h1>
+        <p class="tagline">Enfréntate a tus bugs</p>
+        <p class="promo-text">
+          Adéntrate en un mundo lleno de pixeles, lintings y protocolos que te
+          acechan tras cada línea de código. ¿Te atreves?
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="el-juego">
+        <h1>El juego</h1>
+
+        <p>
+          <span class="logo">The Front<span>ender</span></span> es el nuevo
+          juego creado por <b>KeepGaming</b> en el que una simple web developer
+          debe profundizar en las cloacas de internet para crear
+          <b>The Ultimate Website</b>, el sitio web definitivo que revolucionará
+          el mundo de la creación web.
+        </p>
+
+        <p>
+          Antes de darse cuenta estará inmersa en miles de líneas de código,
+          estilos CSS, imágenes irreductibles, vídeos gigantescos de mala
+          calidad y textos sin formato. Ella es la última esperanza para los
+          <b>Frikilopers</b>, un grupo de élite del desarrollo web... aunque
+          todabía no lo saben.
+        </p>
+
+        <p>
+          Mientras tanto, el sindicato de los <b>Dirty Coders</b> pondrá todo su
+          empeño en crear toda clase de obstáculos para que nuestra heroína no
+          alcance la última pantalla de internet: desde los más simples errores
+          de linting o errores <b>404 Not Found</b> hasta la más temida de las
+          páginas... <b>500 Server Error</b>.
+        </p>
+
+        <p class="xl">
+          ¿Quieres asumir el reto?
+        </p>
+      </section>
+
+      <section id="descargas">
+        <h1>Descargas</h1>
+
+        <p>
+          Existen versiones del juego en diferentes plataformas y, por supuesto
+          online. Elige la que más te guste y ¡comienza a jugar!
+        </p>
+
+        <ul class="platforms">
+          <li>
+            <a href="#"><img src="./img/platforms/pc.png" alt="PC" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/platforms/xbox.png" alt="XBOX One"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/platforms/ps4.png" alt="PlayStation 4"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/platforms/www.png" alt="PlayStation 4"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/platforms/pegi.png" alt="PEGI 16+"
+            /></a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="comunidad">
+        <h1>Comunidad</h1>
+        <form action="" id="subscribe">
+          <p>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              name="nombre"
+              id="form-nombre"
+              placeholder="Quién eres"
+            />
+          </p>
+          <p>
+            <label for="email">e-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="form-email"
+              placeholder="Tu email (no SPAM)"
+            />
+          </p>
+          <p>
+            <label for="alias">Alias:</label>
+            <input
+              type="text"
+              name="alias"
+              id="form-alias"
+              placeholder="Tu alias"
+            />
+          </p>
+          <p class="checkbox">
+            <input type="checkbox" name="boletin" id="form-boletin" />
+            <label for="form-boletin">¿Quieres suscribirte al boletín?</label>
+          </p>
+          <p>
+            <label for="bio">Sobre ti:</label>
+            <textarea
+              name="bio"
+              id="form-bio"
+              cols="30"
+              rows="10"
+              placeholder="Cuéntanos algo sobre ti"
+            ></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Enviar" />
+          </p>
+        </form>
+      </section>
+
+      <section id="galeria">
+        <h1>Galería</h1>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./img/gallery/2586343.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Arranca el juego
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/2591932.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Línea a línea, el código crece
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/3002641.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Saludamos a las nuevas funcionalidades
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/6447.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Qué buena pinta tiene todo
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/889.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Ajustas hasta el &laquo;pixel perfect&raquo;
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/901.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Ajustas hasta el &laquo;pixel perfect&raquo;
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/O68I5L0.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Documentando...
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/OFDZ4S0.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Listo para la última revisión
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="./img/gallery/OIFWVJ0.jpg" alt="" />
+            <div class="gallery-overlay">
+              <div class="content">
+                Producto terminado
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dirty-coders">
+        <h1>Dirty Coders</h1>
+        <p>
+          En un mundo donde el libro &laquo;Clean Code&raquo; de Robin C. Martin
+          se ha convertido en la biblia de la programación, este oscuro grupo
+          defiende el código spaghetti, el código sin indentación, los puntos y
+          comas y las comillas dobles.
+        </p>
+        <p>
+          Si los ves por la calle, no te acerques, los <b>Frikilopers</b>
+          se encargarán de ellos... probablemente...
+        </p>
+        <div class="coders-grid">
+          <div class="coders-card">
+            <h1 class="card-title">Erebus</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/erebus_by_twohornsunited.jpg"
+                alt="Erebus"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">Glitch MK-V</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/glitch_mk_v_by_twohornsunited.jpg"
+                alt="Glitch MK-V"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">HK-404E</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/hk_404e_by_twohornsunited.jpg"
+                alt="HK-404E"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">Progenitor</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/progenitor_by_twohornsunited.jpg"
+                alt="Progenitor"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">The Panzersoeldner</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/the_panzersoeldner_by_twohornsunited.jpg"
+                alt="The Panzersoeldner"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+          <div class="coders-card">
+            <h1 class="card-title">The Plague of Ages</h1>
+            <div class="card-content">
+              <img
+                src="./img/characters/the_plague_of_ages_by_twohornsunited.jpg"
+                alt="The Plague of Ages"
+              />
+            </div>
+            <div class="card-actions">
+              <a href="#" class="card-link">espacios</a>
+              <a href="#" class="card-link">tabs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <aside class="enlaces">
+        <p>Enlaces de interés:</p>
+        <ul class="lista-enlaces">
+          <li>
+            <a
+              href="https://keepcoding.io"
+              target="_blank"
+              rel="noopener noreferer"
+              >KeepCoding</a
+            >
+          </li>
+          <li><a href="coming-soon.html">Contribuye</a></li>
+          <li><a href="coming-soon.html">Creadores</a></li>
+        </ul>
+      </aside>
+      <aside class="social">
+        <ul class="redes-sociales">
+          <li><a href="404.html">Facebook</a></li>
+          <li><a href="404.html">Instagram</a></li>
+          <li><a href="404.html">Youtube</a></li>
+        </ul>
+      </aside>
+    </footer>
+  </body>
+</html>

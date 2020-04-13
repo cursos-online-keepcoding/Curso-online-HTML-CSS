@@ -1,0 +1,24 @@
+.footer {
+  background-color: #112233;
+  display: flex;
+  flex-direction: column-reverse;
+
+  /* Lo fijamos en el fondo de la página */
+  position: sticky; 
+  bottom: 0;
+  padding-bottom: .35rem; /* Un poco de aire */
+  margin-top: 3rem;
+}
+
+.lista-enlaces,
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: .25rem 0;
+}
+
+.enlaces p {
+  display: none;
+}

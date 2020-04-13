@@ -1,0 +1,62 @@
+* {
+  font-family: 'Cairo', Arial, Helvetica, sans-serif;
+  /* Aunque estos dos valores son la configuración
+     por defecto los incluimos porque son la base de
+     todos los cálculos. */
+  font-size: var(--font-size);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: var(--light-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-family: 'Monda', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-top: 3rem;
+  border-bottom: solid 1px var(--primary-color);
+}
+
+.logo, .logo span {
+  font-family: 'Gugi', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--primary-color);
+  font-size: inherit;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.xl {
+  font-size: 1.5rem;
+}
+
+/* Imágenes y vídeos responsive */
+img, video {
+  max-width: 100%;
+}
+
+@media(min-width: 480px) {
+  .container {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+  }
+}

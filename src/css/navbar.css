@@ -1,0 +1,142 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  max-width: 200px;
+  background-color: var(--dark-color);
+  z-index: 99;
+  box-shadow: #246 2px 2px 10px;
+}
+
+.navbar > .logo {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 36px;
+  background-color: var(--dark-color);
+  font-size: 26px;
+  line-height: 36px;
+}
+
+#burger-checkbox {
+  /* siempre oculto */
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+
+#burger-checkbox:checked ~ .navbar-list {
+  /* permite abrir y cerrar el menú */
+  display: inherit;
+}
+
+.burger-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36 px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.burger-label:before {
+  content: "";
+  position: absolute;
+  background: var(--light-color);
+  width: 26px;
+  height: 4px;
+  left: 6px;
+  top: 8px;
+  box-shadow:
+    0 8px 0 0 var(--light-color),
+    0 16px 0 0 var(--light-color);
+  cursor: pointer;
+} 
+
+
+.navbar-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 36px;
+  height: 100vh;
+
+  /* para el burger menu */
+  /* primero estará oculta */
+  display: none;
+}
+
+.navbar-list .navbar-item {
+  display: inline-block;
+  margin: 0 .25rem;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-list .navbar-item a {
+  display: block;
+  padding: 1rem;
+}
+
+.navbar-list .navbar-item a:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.navbar-list .navbar-item:first-child {
+  margin-left: 0;
+}
+
+.navbar-list .navbar-item:last-child {
+    margin-right: 0;
+}
+
+@media(min-width: 780px) {
+  .navbar {
+    width: auto;
+    max-width: none;
+    height: 36px;
+    box-shadow: none;
+  }
+  .navbar > .logo {
+    display: block;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 36px;
+    width: auto;
+    margin-left: 1rem;
+  }
+
+  .navbar > .navbar-list {
+    display: block;
+    float: right;
+    height: 36px;
+    padding: 0;
+  }
+
+  .navbar-list .navbar-item {
+    width: auto;
+  }
+
+  .navbar-list .navbar-item a {
+    padding: 0 1rem;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  /* El menú es diferente para pantallas grandes */
+  .burger-label, #burger-checkbox {
+    display: none;
+  }
+}

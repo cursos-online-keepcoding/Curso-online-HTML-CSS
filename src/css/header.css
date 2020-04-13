@@ -1,0 +1,82 @@
+.header {
+  background: url("../img/bg.jpg") bottom center;
+  background-size: cover;
+  height: 100vh;
+
+  /*
+    También podemos forzar el alto
+    fijando mínimo y máximo
+  */
+  /*
+  max-height: 100vh;
+  min-height: 100vh;
+  */
+
+  /*
+    Para que el contenido no esté tapado
+    por la barra de navegación, este
+    padding debe ser, como mínimo, el
+    mismo que el alto de la barra de
+    navegación.
+  */
+  padding-top: 65px;
+  position: relative;
+  z-index: 30;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  background: url("../img/simple-pattern-overlay.png") top left repeat;
+  opacity: 0.5;
+  z-index: 31;
+}
+
+.header-content {
+  position: absolute;
+  z-index: 32;
+  padding: 2rem;
+}
+
+.header-content > h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0 0 1.25rem 0;
+}
+
+.header-content .logo,
+.header-content .logo span {
+  font-size: 2rem;
+}
+
+.header-content .tagline {
+  margin: 1rem 1rem 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.header-content .promo-text {
+  margin: 60% -2rem 0 -2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 2rem 2rem;
+  text-shadow: black 2px 2px 2px;
+}
+
+@media all and (orientation: landscape) and (max-height: 479px) {
+  .header-content .promo-text {
+    margin-top: 0;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .header-content {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    min-width: 480px;
+  }
+}
